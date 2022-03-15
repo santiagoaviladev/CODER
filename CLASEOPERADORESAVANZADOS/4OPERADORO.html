@@ -1,0 +1,23 @@
+<script>
+
+    class Carrito {
+        constructor(productos)
+        {
+            this.productos = [];
+        }
+    }
+
+    let carrito = localStorage.getItem("carrito");
+    if(carrito)
+    {
+        console.log(JSON.PARSE(carrito));
+    }
+    else 
+    {
+        carrito = new Carrito();
+        console.log("Hemos creado un nuevo carrito")
+    }
+
+
+
+</script>

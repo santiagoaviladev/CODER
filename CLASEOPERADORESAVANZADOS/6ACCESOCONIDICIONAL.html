@@ -1,0 +1,44 @@
+<div id="producto">
+
+</div>
+
+<script>
+
+    const buscar = parseInt(prompt("INGRESE EL ID DEL PRODUCTO QUE QUIERE BUSCAR"));
+    const productosEnCarrito  = [{
+        id:1,
+        nombre:"Leche",
+        precio:"2000"
+    },
+    {
+            id:2,
+            nombre:"Pan",
+            precio:"3000"
+    },
+    {
+            id:3,
+            nombre:"Huevos",
+            precio:"500"
+    },
+    {
+            id:4,
+            nombre:"Azúcar",
+            precio:"1000"
+    },
+    {
+            id:5,
+            nombre:"Sal",
+            precio:"4000"
+    },
+    ]
+    
+    const producto = productosEnCarrito.find(element=>element.id===buscar);
+
+    const nodo = document.querySelector("#producto");
+
+    
+    
+
+
+</script>
+
