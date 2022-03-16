@@ -7,8 +7,8 @@
         }
     }
 
-    let carrito = localStorage.getItem("carrito");
-    if(carrito)
+    //let carrito = localStorage.getItem("carrito");
+   /* if(carrito)
     {
         console.log(JSON.PARSE(carrito));
     }
@@ -17,6 +17,13 @@
         carrito = new Carrito();
         console.log("Hemos creado un nuevo carrito")
     }
+    */
+
+
+    let carrito = localStorage.getItem("carrito") || new Carrito(); 
+    console.log(carrito);
+   
+    
 
 
 

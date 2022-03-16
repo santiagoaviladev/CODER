@@ -1,8 +1,8 @@
 <script>
 
-  function suma(a, b)
+  function suma(...numeros)
   {
-        return a+b;
+        return numeros.reduce((suma,numero)=>suma+=numero);
   }
 
   console.log(suma(1,2));

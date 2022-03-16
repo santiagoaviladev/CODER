@@ -35,8 +35,10 @@
     const producto = productosEnCarrito.find(element=>element.id===buscar);
 
     const nodo = document.querySelector("#producto");
-
     
+    nodo.innerHTML= `Nombre Producto:${producto?.nombre}` 
+    
+    console.log("ACA SIGUE EL PROGRAMA");
     
 
 
