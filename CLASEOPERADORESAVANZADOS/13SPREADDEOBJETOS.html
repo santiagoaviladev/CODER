@@ -27,17 +27,14 @@ const productosEnCarrito  = [{
     },
     ]
 
-    console.log("PRODUCTOS EN CARRITO", productosEnCarrito);
     const categorias = productosEnCarrito.map(element=>{
         return {
-            categoria: "Desayuno",
-            ...element,
+            categoria: "Desayuno", 
+            element,
         }
     })
 
-    console.log("CATEGORIAS CON SPREAD", categorias);
-
-    
+    console.log(categorias);
 
 
 </script>
