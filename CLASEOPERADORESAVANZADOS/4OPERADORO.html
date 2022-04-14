@@ -10,14 +10,16 @@
     let carrito = localStorage.getItem("carrito");
     if(carrito)
     {
-        console.log(JSON.PARSE(carrito));
+        console.log(JSON.parse(carrito));
     }
     else 
     {
         carrito = new Carrito();
-        console.log("Hemos creado un nuevo carrito")
+        console.log("Hemos creado un nuevo carrito: "+carrito)
     }
 
+    let carrito2 = localStorage.getItem("carrito") ||  new Carrito();
 
+    console.log(carrito2);
 
 </script>

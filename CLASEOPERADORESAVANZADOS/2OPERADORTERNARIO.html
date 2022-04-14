@@ -10,6 +10,30 @@
         alert("NO PUEDE TOMAR CERVEZA");
     }
 
+    let mensaje = edad>=18  ? "PUEDE TOMAR CERVEZA" 
+                           : "NO PUEDE TOMAR CERVEZA";
+
+    alert("CON TERNARIO "+ mensaje);
+
+
+    let mensaje2 = edad>=18  ? mostrarPuede() 
+                           : mostrarNoPuede();
+
+
+    alert("CON TERNARIO "+ mensaje2);
+
+
+    function mostrarPuede()
+    {
+        return "SI PUEDE"
+    }
+
+    function mostrarNoPuede()
+    {
+        return "NO PUEDE"
+    }
+
+
 
 
 </script>

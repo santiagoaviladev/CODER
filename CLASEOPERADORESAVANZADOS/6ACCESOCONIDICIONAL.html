@@ -36,8 +36,11 @@
 
     const nodo = document.querySelector("#producto");
 
+    nodo.innerHTML= producto ?
+                 `<h1>${producto?.nombre}</h1>` 
+                : "<h1>No encontré nada</h1>";
     
-    
+    console.log("ACA SEGUIMOS");
 
 
 </script>
