@@ -3,7 +3,11 @@
 const productosEnCarrito  = [{
         id:1,
         nombre:"Leche",
-        precio:"2000"
+        precio:"2000",
+        categoria: "Desayuno",
+        descuento: "20%",
+        peso: "1kg",
+        marca: "Colanta"
     },
     {
             id:2,
@@ -27,14 +31,26 @@ const productosEnCarrito  = [{
     },
     ]
 
-    const categorias = productosEnCarrito.map(element=>{
-        return {
-            categoria: "Desayuno", 
-            element,
-        }
-    })
+    const miProducto = {...productosEnCarrito[0]};
 
-    console.log(categorias);
+    console.log(miProducto);
+
+    miProducto.nombre="CERVEZA";
+
+    console.log(miProducto);
+
+    console.log(productosEnCarrito);
+
+
+    const miOtroProducto = {
+        ...productosEnCarrito[1],
+        nombre: "CERVEZA",
+        categoria: "ALCOHOL",
+        noExiste:"HOLA"
+    }
+
+    console.log("SEGUNDO PROD", miOtroProducto);
+
 
 
 </script>

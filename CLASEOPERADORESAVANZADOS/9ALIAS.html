@@ -1,6 +1,6 @@
 <script>
 
-    const producto = 
+    const producto1 = 
         {
             id:1,
             nombre:"pan",
@@ -9,9 +9,28 @@
             categoria:"Desayuno"
         }
 
+        const producto2 = 
+        {
+            id:2,
+            nombre:"leche",
+            precio: "2000",
+            descuento:"20%",
+            categoria:"Desayuno"
+        }
+        
+        const {id, nombre} = producto1;
+        const {id: idProducto2, nombre: nombreProducto2} = producto2;
 
-    
+        console.log(idProducto2, nombreProducto2);
 
+
+        imprimirProducto(producto1);
+
+        function imprimirProducto({id, nombre})
+        {   
+            console.log("IMPRIMI PRODUCTO");
+            console.log(id, nombre)
+        }
     
 
 </script>
